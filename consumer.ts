@@ -1,4 +1,4 @@
-import a from "../dist";
+import a from "provided-library";
 
 if (a.version === "1") {
   a.foo();
