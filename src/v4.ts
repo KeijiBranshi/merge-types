@@ -2,7 +2,7 @@ import { IteratesOn } from "./type-helper";
 import { MyModule as V3 } from "./v3";
 
 /**
- * Sample of Version inheritance
+ * Sample of Version inheritance (using IteratesOn<>)
  */
 export type MyModule = IteratesOn<
   V3,

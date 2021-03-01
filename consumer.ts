@@ -23,5 +23,22 @@ switch (a.version) {
     break;
   }
   default: {
+    // ideally default cases would be barred by a lint rule
+    // this enforces devs to make sure each scenario is handled
+  }
+}
+
+switch (a.version) {
+  case "1":
+  case "2":
+  case "3":
+    throw new Error("TOO OLD. Please Update");
+    break;
+  case "4": {
+    a.foo(1);
+    break;
+  }
+  case "5": {
+    a.fizz();
   }
 }
