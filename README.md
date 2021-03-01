@@ -2,6 +2,8 @@
 
 playground for fiddling with runtime type merging
 
+> anything that CAN be known/handled by the compiler SHOULD be
+
 # How to
 
 ```
